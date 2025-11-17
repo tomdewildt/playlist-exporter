@@ -6,11 +6,14 @@ A simple tool to move files referenced in `*.m3u8` playlists into a directory lo
 # How To Run
 
 Prerequisites:
-* [TODO] version ```[TODO]``` or later
+* go version ```1.25.3``` or later
 
 ### Production
 
-1. [TODO]
+1. Run `go mod download` to download dependencies.
+2. Run the following command to build the binary:
+     * For MacOS: `GOOS=darwin GOARCH=arm64 go build -ldflags "-X main.Name=playlist-exporter -X main.Version=<version>" -o playlist-exporter ./cmd/playlist-exporter`
+     * For Windows: `GOOS=windows GOARCH=amd64 go build -ldflags "-X main.Name=playlist-exporter -X main.Version=<version>" -o playlist-exporter.exe ./cmd/playlist-exporter`
 
 # References
 
